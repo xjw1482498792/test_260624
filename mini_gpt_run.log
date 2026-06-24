@@ -1,0 +1,23 @@
+C:\20260529\my_sap_project\test\.venv\Lib\site-packages\torch\_subclasses\functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+模型参数量：178,497
+使用设备：cpu
+
+step    0 | train loss: 5.4538 | val loss: 4.8918
+step  500 | train loss: 0.4970 | val loss: 3.5564
+step 1000 | train loss: 0.2787 | val loss: 3.8123
+step 1500 | train loss: 0.2656 | val loss: 4.0640
+step 2000 | train loss: 0.1952 | val loss: 4.2908
+step 2500 | train loss: 0.1756 | val loss: 4.2025
+step 2999 | train loss: 0.1608 | val loss: 4.6775
+
+── 生成文本 ──
+
+ def forward(self, x):
+        B, T, C = x.shape
+        q = self.q(x)                                    # (B, T, C)
+        pos  = self.pos_emb(torch.arange(T, device=device)) # (T, C)
+        x    = tok + pos
+        x    = self.blocks(x)
+        x    = self.ln_f(x)
+        logits = self.head(x) 

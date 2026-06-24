@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test1 debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--query", "查询订单", "--table", "VBAK", "--verbose"]
+        }
+    ]
+}

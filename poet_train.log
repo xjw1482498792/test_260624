@@ -1,0 +1,62 @@
+C:\20260529\my_sap_project\test\.venv\Lib\site-packages\torch\_subclasses\functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+模型参数量：3,605,105
+训练数据：126,248 字，认识 3569 个字，共 3714 首绝句
+
+step     0 | loss 8.339 | 用时 1s
+step   200 | loss 4.075 | 用时 108s
+step   400 | loss 3.320 | 用时 218s
+step   600 | loss 2.723 | 用时 325s
+step   800 | loss 2.129 | 用时 434s
+step  1000 | loss 1.871 | 用时 543s
+   [春天] 【春天】萬條長在薄陵頭，一尉春來新詔蠻。
+   [爱情] 【爱情】憶昔秋風起，吹簫起繞萬。千淘萬漉雖，香蛾猶未極。
+step  1200 | loss 1.566 | 用时 655s
+step  1400 | loss 1.371 | 用时 765s
+step  1600 | loss 1.209 | 用时 877s
+step  1800 | loss 1.040 | 用时 988s
+step  2000 | loss 0.895 | 用时 1099s
+   [春天] 【春天】萬頃荒臨不見春，莫將行樂已無多。去年千里人誰善舞，便夜啼鶯長起坐。
+   [爱情] 【爱情】柳暗花間花，高秋不共悲。如何與君別，又見此山僧。
+step  2200 | loss 0.933 | 用时 1211s
+step  2400 | loss 0.838 | 用时 1322s
+step  2600 | loss 0.801 | 用时 1433s
+step  2800 | loss 0.675 | 用时 1544s
+step  3000 | loss 0.657 | 用时 1655s
+   [春天] 【春天】莫訝武陵豈人間，春來燈火是人家。山僧近住溪鳥下，應是行人心不宿。
+   [爱情] 【爱情】君登青雲去，予望青山歸。雲山從此別，淚濕薜蘿衣。
+step  3200 | loss 0.666 | 用时 1765s
+step  3400 | loss 0.673 | 用时 1874s
+step  3600 | loss 0.593 | 用时 1984s
+step  3800 | loss 0.567 | 用时 2094s
+step  4000 | loss 0.534 | 用时 2204s
+   [春天] 【春天】一樹寒梅白玉條，迥臨村路傍溪橋。應緣近水花先發，疑是經春雪未開。
+   [爱情] 【爱情】祀夏功何薄，尊周義不成。淒涼庾信賦，千載共傷情。
+step  4200 | loss 0.529 | 用时 2315s
+step  4400 | loss 0.566 | 用时 2424s
+step  4600 | loss 0.513 | 用时 2533s
+step  4800 | loss 0.487 | 用时 2643s
+step  5000 | loss 0.538 | 用时 2752s
+   [春天] 【春天】春愁不盡別年年，誰不如人意轉蓬。近來音耗絕，終始隨風雪。
+   [爱情] 【爱情】北闕聖人歌太康，南冠君子竄遐荒。漢酺聞奏鈞天樂，願得風吹到夜郎。
+step  5200 | loss 0.482 | 用时 2863s
+step  5400 | loss 0.477 | 用时 2972s
+step  5600 | loss 0.484 | 用时 3080s
+step  5800 | loss 0.472 | 用时 3190s
+step  6000 | loss 0.502 | 用时 3299s
+   [春天] 【春天】楊柳青青杏發花，年光誤客轉思家。不知湖上菱歌女，幾箇春舟在若耶。
+   [爱情] 【爱情】南州風土滯龍媒，黃紙初飛勅字來。二月曲江連舊宅，阿婆情熟牡丹開。
+step  6200 | loss 0.446 | 用时 3409s
+step  6400 | loss 0.461 | 用时 3522s
+step  6600 | loss 0.479 | 用时 3631s
+step  6800 | loss 0.447 | 用时 3740s
+step  7000 | loss 0.424 | 用时 3849s
+   [春天] 【春天】南楚宮堪一百州，春風挽斷更傷情。閑花落盡青苔地，盡日無人誰得知。
+   [爱情] 【爱情】秦僧吹竹閉秋城，早在梨園稱主情。今日知音一倍芳。
+step  7200 | loss 0.436 | 用时 3960s
+step  7400 | loss 0.420 | 用时 4070s
+step  7600 | loss 0.476 | 用时 4179s
+step  7800 | loss 0.416 | 用时 4288s
+step  7999 | loss 0.437 | 用时 4396s
+
+训练完成，已存档 poet.pth
