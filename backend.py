@@ -1,10 +1,12 @@
 # encoding: utf-8
 import os
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, FileResponse
 from openai import AsyncOpenAI
 
+load_dotenv()  # 从同目录的 .env 文件加载环境变量
 DEEPSEEK_API_KEY = os.environ["DEEPSEEK_API_KEY"]  # 从环境变量读取，不要硬编码到代码里
 
 client = AsyncOpenAI(

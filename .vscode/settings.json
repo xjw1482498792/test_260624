@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "dotenv"
-    ]
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": true
 }
