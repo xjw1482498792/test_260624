@@ -1,10 +1,11 @@
 # encoding: utf-8
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, FileResponse
 from openai import AsyncOpenAI
 
-DEEPSEEK_API_KEY = "***REMOVED***"  # 替换成你的 Key
+DEEPSEEK_API_KEY = os.environ["DEEPSEEK_API_KEY"]  # 从环境变量读取，不要硬编码到代码里
 
 client = AsyncOpenAI(
     api_key=DEEPSEEK_API_KEY,
