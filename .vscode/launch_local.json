@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test1 debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--query", "查询订单", "--table", "VBAK", "--verbose"]
+        },
+        {
+            "name": "Debug FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": ["test11:app"],
+            "cwd": "${workspaceFolder}",
+            "jinja": true,
+            "justMyCode": false
+        }
+    ]
+}
