@@ -7,6 +7,16 @@
             "request": "launch",
             "program": "${file}",
             "args": ["--query", "查询订单", "--table", "VBAK", "--verbose"]
+        },
+        {
+            "name": "Debug Celery worker",
+            "type": "python",
+            "request": "launch",
+            "module": "celery",
+            "cwd": "${workspaceFolder}",
+            "args": ["-A", "tasks", "worker", "-P", "solo", "-l", "info"],
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }
