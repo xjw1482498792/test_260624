@@ -7,9 +7,9 @@ async def fake_llm_stream(prompt: str):
     for word in words:
         for char in word:
             yield f"data: {char}\n\n"
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(3)
         yield f"data: 。\n\n"
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(3)
     yield "data: [DONE]\n\n"
 
 gen1 = fake_llm_stream("你好")

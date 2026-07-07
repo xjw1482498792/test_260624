@@ -43,4 +43,4 @@ async def print_stream(gen):
     async for chunk in gen:
         print(chunk, end='', flush=True)
 
-asyncio.run(gen)
+asyncio.run(print_stream(gen))

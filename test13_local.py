@@ -37,3 +37,4 @@ res = Solution().mergeTwoLists(list1, list2)
 while res:
     print(res.val, end=" -> ")
     res = res.next
+    
