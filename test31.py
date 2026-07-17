@@ -1,0 +1,1 @@
+from test30 import fun1

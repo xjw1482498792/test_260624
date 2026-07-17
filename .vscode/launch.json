@@ -6,7 +6,13 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "args": ["--query", "查询订单", "--table", "VBAK", "--verbose"]
+            "args": [
+                "--query",
+                "查询订单",
+                "--table",
+                "VBAK",
+                "--verbose"
+            ]
         },
         {
             "name": "Debug Celery worker",
@@ -14,7 +20,37 @@
             "request": "launch",
             "module": "celery",
             "cwd": "${workspaceFolder}",
-            "args": ["-A", "tasks", "worker", "-P", "solo", "-l", "info"],
+            "args": [
+                "-A",
+                "tasks",
+                "worker",
+                "-P",
+                "solo",
+                "-l",
+                "info"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Attach Streamlit",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            }
+        },
+        {
+            "name": "Launch Streamlit test22",
+            "type": "python",
+            "request": "launch",
+            "module": "streamlit",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "run",
+                "${workspaceFolder}/test22.py"
+            ],
             "console": "integratedTerminal",
             "justMyCode": false
         }
