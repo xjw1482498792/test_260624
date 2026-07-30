@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "test1 debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--query", "查询订单", "--table", "VBAK", "--verbose"]
+        },
+        {
+            "name": "Debug Celery worker",
+            "type": "python",
+            "request": "launch",
+            "module": "celery",
+            "cwd": "${workspaceFolder}",
+            "args": ["-A", "tasks", "worker", "-P", "solo", "-l", "info"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Debug test22 (Streamlit)",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "module": "streamlit",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "run",
+                "${workspaceFolder}/test22.py"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "subProcess": true
+        }
+    ]
+}
