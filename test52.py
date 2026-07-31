@@ -63,6 +63,7 @@ class LockDemo:
         with self.lock:
             print("update_balance：获取成功")
             self.add_money(50)
+        # print("可以执行")
 
         print(f"Lock 最终余额：{self.balance}")
 
@@ -88,6 +89,7 @@ class RLockDemo:
         with self.lock:
             print("update_balance：获取成功")
             self.add_money(50)
+        
 
         print(f"RLock 最终余额：{self.balance}")
 
@@ -103,6 +105,7 @@ def run_lock_demo():
 
     thread.start()
     thread.join()
+    # pass
 
 
 def run_rlock_demo():
