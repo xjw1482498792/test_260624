@@ -4,5 +4,16 @@
         "dotenv"
     ],
     "editor.inlineSuggest.enabled": true,
-    "github.copilot.editor.enableAutoCompletions": true
+    "github.copilot.editor.enableAutoCompletions": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:\\Users\\xiaojiawei\\AppData\\Local\\Programs\\Temurin\\jdk8u502-b07",
+            "default": true
+        }
+    ],
+    "java.project.sourcePaths": [
+        "mysql-mongo-ordered-demo/src"
+    ],
+    "java.project.outputPath": "mysql-mongo-ordered-demo/out"
 }

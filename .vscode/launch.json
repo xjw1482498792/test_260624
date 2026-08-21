@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "OrderedSyncDemo",
+            "request": "launch",
+            "mainClass": "OrderedSyncDemo",
+            "projectName": "git0625_8cf38e70"
+        },
+        {
             "name": "test1 debug",
             "type": "python",
             "request": "launch",
